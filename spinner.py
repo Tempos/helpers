@@ -11,7 +11,9 @@ class Spinner:
     def __init__(self, delay=None):
         # self.spinner = iter(cycle(['-', '\\', '|', '/']))
         # self.spinner = iter(cycle(["🚶 ", "🏃 "]))
-        self.spinner = iter(cycle([".  ", ".. ", "...", " ..", "  .", "   "]))
+        self.spinner = iter(
+            cycle(["🕛 ", "🕐 ", "🕑 ", "🕒 ", "🕓 ", "🕔 ", "🕕 ", "🕖 ", "🕗 ", "🕘 ", "🕙 ", "🕚 "]))
+        # self.spinner = iter(cycle([".  ", ".. ", "...", " ..", "  .", "   "]))
         self.delay = float(delay) if delay else self.delay
 
     def spinner_task(self):
